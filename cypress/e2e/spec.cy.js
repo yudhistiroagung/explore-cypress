@@ -20,7 +20,8 @@ describe('empty spec', () => {
       .click()
 
     // click on app pakage on project
-    cy.get(':nth-child(2) > .col-md-2 > .css-truncate > .js-navigation-open')
+    cy.get('.Details-content--hidden-not-important > :nth-child(2)')
+      .contains('app')
       .click()
   })
 })
